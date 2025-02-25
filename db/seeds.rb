@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+# customer1 = Customer.create!(name: "Barbara")
+
+order1 = Order.create!(amount: 100, price:175, spice_level: "Mild and Hot",  customer_id: 1)
