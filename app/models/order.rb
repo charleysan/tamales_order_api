@@ -4,7 +4,7 @@ class Order < ApplicationRecord
   
   validates :price, presence: true
 
-
+  scope :minimal_order, -> { where(amount) = 30)}
 
   belongs_to :customer
 end

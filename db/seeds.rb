@@ -10,4 +10,19 @@
 
 # customer1 = Customer.create!(name: "Barbara")
 
-order1 = Order.create!(amount: 100, price:175, spice_level: "Mild and Hot",  customer_id: 1)
+# order1 = Order.create!(amount: 100, price:175, spice_level: "Mild and Hot",  customer_id: 1)
+
+post = Post.create(title: "First Post", content: "Hello, world.")
+photo = Photo.create(title: "Sunset", url: "http://example.com/sunset.jpg")
+Comment.create(body: "Nice post!", commentable: post)
+Comment.create(body: "Beautiful pic!", commentable: photo)
+
+post = Post.create(title: "Second Post", content: "Hello, world.")
+photo = Photo.create(title: "Flower", url: "http://example.com/flower.jpg")
+Comment.create(body: "Sweet Post!", commentable: post)
+Comment.create(body: "Awesome!", commentable: photo)
+
+post = Post.create(title: "Third Post", content: "Hello, world.")
+photo = Photo.create(title: "Forensics", url: "http://example.com/forensics.jpg")
+Comment.create(body: "Gnarly!", commentable: post)
+Comment.create(body: "Explicit content!", commentable: photo)
